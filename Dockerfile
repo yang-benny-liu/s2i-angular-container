@@ -29,7 +29,7 @@ ENV NODE_VERSION=7.7.1 \
 
 # Install Apache httpd from www.softwarecollections.org
 RUN yum install -y \
-https://www.softwarecollections.org/repos/rhscl/httpd24/epel-7-x86_64/noarch/rhscl-httpd24-epel-7-x86_64-1-2.noarch.rpm && \
+http://mirror.centos.org/centos/7/sclo/x86_64/rh/Packages/h/httpd24-build-1.1-19.el7.x86_64.rpm && \
   yum install -y --setopt=tsflags=nodocs httpd24 && \
   yum clean all -y
 
